@@ -1,7 +1,10 @@
 const productExceptSelf = nums => {
    
    // Iterate of existing array to get a unit array 
-
+   
+   // Time Complexity = O[n]
+   // unitarr is used throughout and returned eventually. So, space complexity is O[1]
+   
    let unitarr = nums.map( (n) => {
     // For each element in the array return 1 as the output value
     return 1;
@@ -10,7 +13,7 @@ const productExceptSelf = nums => {
    let product = 1;
 
    // Multiply from left to right 
-
+   // Time Complexity = O[n]
    for(let ctr=0; ctr < nums.length; ctr++){
     unitarr[ctr] = unitarr[ctr] * product;
     product = product * nums[ctr];
@@ -19,7 +22,7 @@ const productExceptSelf = nums => {
    product =1;
 
    // Multiply from right 
-
+   // Time Complexity = O[n]
    for (let index = nums.length-1; index >=0; index--){
     unitarr[index] = unitarr[index] * product;
     product = product * nums[index];
