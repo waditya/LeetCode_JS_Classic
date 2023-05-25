@@ -1,5 +1,7 @@
 function maxArea(height) {
-
+   // Time Complexity O[n] because we iterate the array once
+   // Space complexity is O[1] because a single variable is used to store pointers and calculated area
+   
    // console.log( "Height array is : "+height);
    let leftPtr=0;
    let rightPtr=height.length-1;
