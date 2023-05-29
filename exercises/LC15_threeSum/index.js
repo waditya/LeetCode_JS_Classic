@@ -1,6 +1,6 @@
 const threeSum = nums => {
     
-    // Sort the array in place O[nlog(n)] Time Complexity
+    // Sort the array in place O[nlog(n)] Time Complexity.
     nums.sort((a,b) => a-b);
     let result_arr=[];
     // Space compelxity is O[1]
