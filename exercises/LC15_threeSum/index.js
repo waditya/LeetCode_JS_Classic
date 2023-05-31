@@ -3,7 +3,7 @@ const threeSum = nums => {
     // Sort the array in place O[nlog(n)] Time Complexity.
     nums.sort((a,b) => a-b);
     let result_arr=[];
-    // Space compelxity is O[1]
+    // Space compelxity is O[1].
     // Total Loop complexity us O[n^2]
     // On[n] time complexity for outer for loop
     for (let i=0; i< nums.length;i++){
